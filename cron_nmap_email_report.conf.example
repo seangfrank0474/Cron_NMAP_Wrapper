@@ -2,7 +2,7 @@
 # Uncomment and customize your nmap scan.
 
 # TARGETS=(ip,range,cidr,file,files (default))
-# example: TARGETS=10.0.1.1 10.0.1.2 ..., TARGETS=10.0.1.1-10, TARGETS=10.0.254.0/24, TARGETS=/path/to/file.txt, multiple list TARGETS=/path/to/files/*
+# example: TARGETS=10.0.1.1 10.0.1.2 ..., TARGETS=10.0.1.1-10, TARGETS=10.0.254.0/24, TARGETS=/path/to/scan_list/file.txt, multiple list TARGETS=/path/to/scan_list/*
 TARGETS=<See example for syntax>
 
 # SCAN_TYPE=(-sS (default), -sT, -sU, -sA, -sW, -sM)
