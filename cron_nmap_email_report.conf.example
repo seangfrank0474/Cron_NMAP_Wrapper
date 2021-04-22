@@ -1,0 +1,30 @@
+# Allscripts Linode Nmap scanning and vulnerability wrapper configuration file.
+# Uncomment and customize your nmap scan.
+
+# TARGETS=(ip,range,cidr,file,files (default))
+# example: TARGETS=10.0.1.1 10.0.1.2 ..., TARGETS=10.0.1.1-10, TARGETS=10.0.254.0/24, TARGETS=/path/to/file.txt, multiple list TARGETS=/path/to/files/*
+TARGETS=<See example for syntax>
+
+# SCAN_TYPE=(-sS (default), -sT, -sU, -sA, -sW, -sM)
+# example: SCAN_TYPE="-sS"
+# Default: SCAN_TYPE="-sS"
+SCAN_TYPE=-sS
+
+# PORT_SETTING=(single, multiple, range, fast (default), top)
+# example: PORT_SETTING="-p 21", PORT_SETTING="-p 21,23,8080" OR "-p U:53,500,T:25,80,389", PORT_SETTING="-p 135-139", PORT_SETTING="-F" (top 100), PORT_SETTING="--top-ports 500"
+# Default: PORT_SETTING=-F
+PORT_SETTING=-F
+
+# SVC_VER=(-sV (default), -sV --version-intensity <num> Intensity level 0 to 9. Higher number increases possibility of correctness)
+# example: SVC_VER="-sV --version-intensity 5"
+# Default: SVC_VER=-sV
+SVC_VER=-sV
+
+# SCRPT_TYPE=(-sC (default), --script default, --script <script name here>)
+# example: SCRPT_TYPE="--script default", SCRPT_TYPE="--script http-vuln-cve2020-5902"
+# SCRPT_TYPE=-sC
+SCRPT_TYPE=-sC
+
+# EMAIL_RCPTS=tom@example.com,dick@example.com,harry@example.com  
+EMAIL_RCPTS=no-reply@example.com                                                                                                                                                                           EMAIL_RCPTS=no-reply@example.com
+EMAIL_SUB=Change me
