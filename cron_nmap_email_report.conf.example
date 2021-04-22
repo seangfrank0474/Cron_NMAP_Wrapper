@@ -1,4 +1,4 @@
-# Allscripts Linode Nmap scanning and vulnerability wrapper configuration file.
+# Cron Nmap scanning and vulnerability wrapper configuration file.
 # Uncomment and customize your nmap scan.
 
 # TARGETS=(ip,range,cidr,file,files (default))
